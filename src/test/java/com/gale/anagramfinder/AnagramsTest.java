@@ -38,12 +38,14 @@ public class AnagramsTest {
 		assertThat(isAnagram("amortizements", "isomerization"), is(false));
 	}
 	
+	@SuppressWarnings("unchecked")
 	@Test
 	public void findAnagrams_returnsSingleAnagram() throws Exception {
 		List<String> anagram = (List<String>)Arrays.asList("dog", "god");
 		assertThat(Anagrams.find("dog", "god"), is((List<List<String>>)Arrays.asList(anagram)));
 	}
 	
+	@SuppressWarnings("unchecked")
 	@Test
 	public void findAnagrams_doesNotContainListsOfSingleTerms() throws Exception {
 		List<String> anagram = (List<String>)Arrays.asList("dog", "god");
