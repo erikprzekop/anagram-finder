@@ -29,7 +29,7 @@ public class AnagramsPerformanceTest {
 	}
 	
 	@Test
-	public void testname() throws Exception {
+	public void shouldBeFast() throws Exception {
 		long startMillis = System.currentTimeMillis();
 		List<List<String>> findAnagrams = Anagrams.find(dictionary);
 		long endMillis = System.currentTimeMillis();
